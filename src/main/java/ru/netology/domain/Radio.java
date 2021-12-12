@@ -1,7 +1,6 @@
 package ru.netology.domain;
 
 public class Radio {
-    String name;
     private int currentStation;
     private int currentVolume;
     int maxStation = 9;
