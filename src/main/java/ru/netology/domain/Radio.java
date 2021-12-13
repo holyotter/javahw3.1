@@ -3,14 +3,17 @@ package ru.netology.domain;
 public class Radio {
     private int currentStation;
     private int currentVolume;
-    int maxStation = 9;
-    int minStation = 0;
-    int maxVolume = 10;
-    int minVolume = 0;
+    private int maxStation = 9;
+    private int minStation = 0;
+    private int maxVolume = 10;
+    private int minVolume = 0;
 
     public void shouldNextStation() {
         if (currentStation < maxStation) {
             currentStation = currentStation + 1;
+        }
+        else {
+            currentStation = 0;
         }
     }
 
