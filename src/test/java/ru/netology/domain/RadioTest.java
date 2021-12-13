@@ -18,7 +18,7 @@ class RadioTest {
     public void nextStationOutRange() {
         radio.setCurrentStation(9);
         radio.shouldNextStation();
-        assertEquals(9, radio.getCurrentStation());
+        assertEquals(0, radio.getCurrentStation());
     }
 
     @Test
