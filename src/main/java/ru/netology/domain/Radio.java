@@ -21,6 +21,9 @@ public class Radio {
         if (currentStation > minStation) {
             currentStation = currentStation - 1;
         }
+        else {
+            currentStation = 9;
+        }
     }
 
     public void shouldUpVolume() {
