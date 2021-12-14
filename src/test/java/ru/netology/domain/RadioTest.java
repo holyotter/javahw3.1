@@ -32,7 +32,7 @@ class RadioTest {
     public void prevStationOutRange() {
         radio.setCurrentStation(0);
         radio.shouldPrevStation();
-        assertEquals(0, radio.getCurrentStation());
+        assertEquals(9, radio.getCurrentStation());
     }
 
     @Test
